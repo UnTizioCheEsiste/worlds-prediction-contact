@@ -1,0 +1,43 @@
+name: API / Data Provider Contact
+description: Contact the project maintainer about an API or data-provider integration.
+title: "[Provider contact] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public contact channel. Please do not include personal information, credentials, access tokens, or confidential data. No email address is required.
+  - type: input
+    id: organization
+    attributes:
+      label: Organization or provider
+      description: Optional organization or data-provider name.
+    validations:
+      required: false
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: A short summary of the request or concern.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the request or concern
+      description: Explain the relevant question, policy, attribution concern, or integration issue.
+    validations:
+      required: true
+  - type: input
+    id: integration
+    attributes:
+      label: Relevant API endpoint or integration
+      description: Optional public endpoint or integration name. Do not include credentials.
+    validations:
+      required: false
+  - type: textarea
+    id: requested-action
+    attributes:
+      label: Requested action
+      description: Describe the response or change you are requesting.
+    validations:
+      required: true
